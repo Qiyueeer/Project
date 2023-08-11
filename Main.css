@@ -24,15 +24,7 @@ header{
     
 }
 
-.header ul{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 40px;
-    font-size: 16px;
-    /* 蓝色框替换成背景图片*/
-    border:5px solid blue
-}
+
 
 .header .title{
     font-size: 22px;
@@ -95,11 +87,21 @@ font-size: 60px;
     font-size: 20px;
 }
 
-button{
-    background-color: red;
-}
+
 
 
 a:hover{
     color: red;
        }
+
+       
+    textarea{
+        margin-top: 1cm;
+        margin-left: 5cm;
+        width: 16cm;
+        height: 0.5cm;
+    }
+    
+    button{
+        display: inline-block;
+    }
