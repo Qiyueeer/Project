@@ -36,7 +36,14 @@ h3{
     text-align: center;
 }
 
-button{
+.h3 button{
+
+    background-color: orange;
+    display: inline-block;
+
+}
+
+.right button{
     
     margin-left: 2cm;
     background-color: orange;
