@@ -1,7 +1,11 @@
+
+
+
 function Start(){
 
 
     window.scrollTo(0, document.documentElement.scrollHeight-document.documentElement.clientHeight);
+
 }
 
 function Cart(){
@@ -35,3 +39,8 @@ function show_SmallMenu(){
 }
 
 
+function ti(){
+
+    let today = new Date()
+    document.getElementById("time").innerHTML = today
+}

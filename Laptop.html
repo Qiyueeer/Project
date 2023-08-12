@@ -5,6 +5,7 @@
   <title> Laptop </title>
   <link rel="stylesheet" type="text/css" href="items.css" title="style" />
   <script src="Main.js"></script>
+  <script src="laptop.js"></script>
 </head>
 <body>
 
@@ -42,18 +43,19 @@
                  
               </select>
             <p> First Name: </span>
-            <input type="text" name="firstName"  >
+            <input type="text" name="firstName" id = "first" >
            </p>
             <p> Last Name: </span>
-             <input type = "text" name = "lastName">
+             <input type = "text" name = "lastName" id = "last">
             </p>  
             <p> Email: </span>
-            <input type = "email" name = "email">
+            <input type = "email" name = "email" id = "email">
             </p>
             <p>Extra Warranty Time: </span>
               <input type="radio" name="year" value="3"/>2
               <input type="radio" name="year" value="4"/>3
              </p>  
+             <button onclick="confirm()">Confirm</button>
             </div>
 
           </div>
