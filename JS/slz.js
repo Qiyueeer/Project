@@ -9,7 +9,7 @@ function Start(){
 }
 
 function Cart(){
-    alert(5)
+    window.location.replace("checkout.html");
 }
 
 
