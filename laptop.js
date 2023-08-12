@@ -1,5 +1,4 @@
 
-export const laptop = a
 
 function confirm(){
     var a = document.getElementById("last").value
