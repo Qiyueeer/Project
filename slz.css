@@ -38,6 +38,14 @@ h3{
 
 button{
     
+    background-color: orange;
+    display: block;
+    margin:0 auto;
+
+}
+
+.right button{
+    
     margin-left: 2cm;
     background-color: orange;
     display: inline-block;
