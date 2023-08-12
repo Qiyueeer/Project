@@ -36,10 +36,11 @@ h3{
     text-align: center;
 }
 
-.h3 button{
-
+button{
+    
     background-color: orange;
-    display: inline-block;
+    display: block;
+    margin:0 auto;
 
 }
 
