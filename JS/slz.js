@@ -20,8 +20,9 @@ function His(){
 
 
 
-function ti(){
+setInterval (function ti(){
 
     let today = new Date()
     document.getElementById("time").innerHTML = today
-}
+    setInterval(play,1000);
+})
