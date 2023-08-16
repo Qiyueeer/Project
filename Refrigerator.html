@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <title> Laptop </title>
-  <link rel="stylesheet" type="text/css" href="css/items.css" title="style" />
-  <script src="JS/slz.js"></script>
+  <link rel="stylesheet" type="text/css" href="items.css" title="style" />
+  <script src="main.js"></script>
 </head>
 <body>
 
@@ -14,8 +14,7 @@
           <ul>
                Main Menu
               <li><button onClick="Start()">Start</button></li>
-              <li><button onClick="Cart()">Cart</button></li>
-              <li><button onClick="His()">History</button></li>
+              <li><button onclick="confirm()">Cart</button></li>
               <li><a href="#" title="z2108335219@gamil.com">contact Us</li></a>
           </ul>
       </div>
@@ -23,46 +22,44 @@
         <div class="items">
           <div class="item">
             <div class="item-img" id="Laptop">
-            <img src="Image/refrigerator.png">
+            <img src="Image/Laptop.png">
             </div>
+            <div id="box">
             Configurations and Models: 
-              <select name="program">   
-                <option value="3060">3060</option>
-                
-                <option value="3070S">3070S</option>
-            
-                <option value="3080">3080</option>
-            
-                <option value="4060">4060</option>
-            
-                <OPTION value="4070S">4070S</OPTION>
-            
-                <option value="4080">4080</option>
-                 
-              </select>
-            <p> First Name: </span>
-            <input type="text" name="firstName"  >
+            <select name="program">   
+              <option value="3060">3060 - 价格：$1000</option>
+              <option value="3070S">3070S - 价格：$1500</option>
+              <option value="3080">3080 - 价格：$2000</option>
+              <option value="4060">4060 - 价格：$1200</option>
+              <option value="4070S">4070S - 价格：$1600</option>
+              <option value="4080">4080 - 价格：$2200</option>
+          </select>
+            <p> First Name: </p>
+            <input type="text" name="firstName" id="first">
            </p>
-            <p> Last Name: </span>
-             <input type = "text" name = "lastName">
+            <p> Last Name: </p>
+             <input type="text" name="lastName" id="last">
             </p>  
-            <p> Email: </span>
-            <input type = "email" name = "email">
+            <p> Email: </p>
+            <input type="email" name="email" id="email">
             </p>
-            <p>Extra Warranty Time: </span>
+            <p>Extra Warranty Time: </p>
               <input type="radio" name="year" value="3"/>2
               <input type="radio" name="year" value="4"/>3
              </p>  
-             <button onclick="confirm()">Confirm</button>
+             <button onclick="cart()">Confirm</button>
+             
+             <div class="cart">
+                <h2>购物车</h2>
+                <ul id="cartList"></ul>
+            </div>
+            </div>
+
           </div>
-
-
-
         </div>
-        </div>
+      </div>
+    </div>
 
 
-</body>
 
-</div>
-</html>
+   

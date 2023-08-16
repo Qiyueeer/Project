@@ -36,3 +36,7 @@ function updateCart() {
         cartList.appendChild(listItem);
     });
 }
+
+function cart(){
+    alert("the items have been added")
+}
