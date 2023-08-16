@@ -6,9 +6,14 @@ function confirm(){
 
     if(a.length > 0  && b.length > 0 && c.length > 0){
         alert("the items have been added")
+        checkout(a,b,c)
     }else{
         alert("please enter you info")
     }
-  
-    
+     
+}
+
+function checkout(){
+
+
 }

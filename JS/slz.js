@@ -27,10 +27,7 @@ function ti(){
     
 }
 
-<<<<<<< Updated upstream
 
-=======
-<<<<<<< HEAD
 const searchInput = document.getElementById("searchInput");
 const searchButton = document.getElementById("searchButton");
 const searchResults = document.getElementById("searchResults");
@@ -60,8 +57,8 @@ function displaySearchResults(keyword) {
         const resultElement = document.createElement("p");
         resultElement.textContent = result;
         searchResults.appendChild(resultElement);
-    });
-=======
+    });}
+
 
 function confirm(){
     var a = document.getElementById("last").value
@@ -75,7 +72,5 @@ function confirm(){
         alert("please enter you info")
     }
   
-    
->>>>>>> 8698e332e03122976ef9bc3959f7e0bc26f2e2cf
 }
->>>>>>> Stashed changes
+
