@@ -10,7 +10,7 @@ server.on('request', function (request, response) {
 })
 
 server.listen(8080, function(){
-    console.log("服务器已经启动，可访问以下地址：");
+    console.log("server：");
     console.log('http://localhost:8080');
 })
 
