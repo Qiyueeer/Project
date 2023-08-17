@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title> Laptop </title>
+  <link rel="stylesheet" type="text/css" href="css/items.css" title="style" />
+  <script src="main.js"></script>
+</head>
+<body>
+
+    <div class="main">
+      <div class="header">
+        <span>Laptop Page</span>
+          <ul>
+               Main Menu
+              <li><button onClick="Start()">Start</button></li>
+              <li><button onclick="confirm()">Cart</button></li>
+              <li><a href="#" title="z2108335219@gamil.com">contact Us</li></a>
+          </ul>
+      </div>
+      <div class="content">
+        <div class="items">
+          <div class="item">
+            <div class="item-img" id="Laptop">
+            <img src="Image/Speaker box.png">
+            </div>
+            <div id="box">
+            Configurations and Models: 
+            <select name="program">   
+              <option value="3060">black with small size - price：$1000</option>
+              <option value="3070S">black with mid size  - price：$1500</option>
+              <option value="3080">black with big size  -price：$2000</option>
+              <option value="4060">white with small size - price：$1200</option>
+              <option value="4070S">white with mid size - price：$1600</option>
+              <option value="4080">white with big size- price：$2200</option>
+          </select>
+            <p> First Name: </p>
+            <input type="text" name="firstName" id="first">
+           </p>
+            <p> Last Name: </p>
+             <input type="text" name="lastName" id="last">
+            </p>  
+            <p> Email: </p>
+            <input type="email" name="email" id="email">
+            </p>
+            <p>Extra Warranty Time: </p>
+              <input type="radio" name="year" value="3"/>2
+              <input type="radio" name="year" value="4"/>3
+             </p>  
+             <button onclick="cart()">Confirm</button>
+             
+             <div class="cart">
+                <h2>Cart</h2>
+                <ul id="cartList"></ul>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
