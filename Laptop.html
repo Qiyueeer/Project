@@ -6,18 +6,17 @@
   <link rel="stylesheet" type="text/css" href="css/items.css" title="style" />
   <!--<script src="main.js"></script>-->
 <script type="text/javascript">
+var carts = new Array();
 function confirm(){
     var a = document.getElementById("program").value;
+   var b = document.getElementById("count").value;
     alert(a);
-     if(a.length > 0  && b.length > 0 && c.length > 0){
-        alert("the items have been added")
-    }else{
-        alert("please enter you info")
-    }
-  
+alert(b);
 }
+function viewCart(){
 
 
+}
 </script>
 </head>
 <body>
@@ -28,33 +27,34 @@ function confirm(){
           <ul>
                Main Menu
               
-              <li><button onclick="confirm()">Cart</button></li>
+              <li><button onblur="viewCart()">Cart</button></li>
               <li><a href="#" title="z2108335219@gamil.com">contact Us</li></a>
           </ul>
       </div>
       <div class="content">
         <div class="items">
           <div class="item">
+
+ <span>Configurations and Models: 
             <div class="item-img" id="Laptop">
             <img src="Image/Laptop.png">
             </div>
-            <div id="box">
-            Configurations and Models: 
-            <select name="program" id ="program" >   
-              <option value="3060">3060 - price：$1000</option>
-              <option value="3070S">3070S - price：$1500</option>
-              <option value="3080">3080 -price：$2000</option>
-              <option value="4060">4060 - price：$1200</option>
-              <option value="4070S">4070S - price：$1600</option>
-              <option value="4080">4080 - price：$2200</option>
+            <div class="item-describe">
+
+	<h3>Laptop</h3>
+                <p align="right"> <span>3060 - price：$1000</p></span>
+	<p>Computers, laptops and printers have become vital tools for companies and individuals in today's fast-paced technological environment. Such devices, like any other asset, have a finite lifespan and depreciate over time. Understanding computer, laptop, and printer depreciation rates is critical for proper financial reporting and tax purposes. 
+                  </p>
+             </div>
+<div>        
+		<select name="count" id ="count" align="right"> 
+              <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+            <option value="5">5</option>
           </select>
-             <button onclick="confirm()">Add to Cart</button>
-             
-             <div class="cart">
-                <h2>Cart</h2>
-                <ul id="cartList"></ul>
-            </div>
-            </div>
+             <button onclick="confirm()">Add to Cart</button>       
 
           </div>
         </div>
