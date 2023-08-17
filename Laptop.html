@@ -6,15 +6,13 @@
   <link rel="stylesheet" type="text/css" href="css/items.css" title="style" />
   <!--<script src="main.js"></script>-->
 <script type="text/javascript">
-var carts = new Array();
+var counts = new Array();
 function confirm(){
-    var a = document.getElementById("program").value;
    var b = document.getElementById("count").value;
-    alert(a);
-alert(b);
+   counts.push('1'+b);
 }
 function viewCart(){
-
+	alert(counts[0]);
 
 }
 </script>

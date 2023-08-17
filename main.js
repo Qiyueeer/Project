@@ -14,6 +14,18 @@ function ti(){
 
 
 
+var carts = new Array();
+function confirm(){
+    var a = document.getElementById("program").value;
+   var b = document.getElementById("count").value;
+    alert(a);
+alert(b);
+}
+function viewCart(){
+}
+
+
+
 
 
 
