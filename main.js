@@ -22,8 +22,14 @@ function confirm(){
 alert(b);
 }
 
-function viewCart(){
-}
+function confirm(){
+    var b = document.getElementById("count").value;
+    counts.push('1'+b);
+ }
+ function viewCart(){
+     alert(counts[0]);
+ 
+ }
 
 
 
