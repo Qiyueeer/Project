@@ -1,27 +1,15 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-
-const PORT = 8000;
+const express = require('express');
+const app = express();
+const port = 3000; 
 
 
-const server = http.createServer((req, res) => {
-  
-  const filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
-  
- 
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
-      res.writeHead(404, { 'Content-Type': 'text/plain' });
-      res.end('File not found');
-    } else {
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(data);
-    }
-  });
+
+app.listen(port, () => {
+  console.log(`Server is listening at http://localhost:${port}`);
 });
 
 
-server.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('./data/mydatabase.db');
+
+
