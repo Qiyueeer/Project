@@ -1,7 +1,7 @@
-// 初始化购物车列表
+
 let cartItems = [];
 
-// 确认购买并添加到购物车的函数
+
 function confirm() {
     const program = document.querySelector("select[name='program']").value;
     const firstName = document.getElementById("first").value;

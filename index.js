@@ -1,16 +1,27 @@
-
 const http = require('http');
-var server = http.createServer(); 
+const fs = require('fs');
+const path = require('path');
 
-server.on('request', function (request, response) {
+const PORT = 8000;
 
-    response.setHeader('Content-Type', 'text/html;charset=utf-8');
-    response.write('<h1>hello world！</h1>');
-    response.end();
-})
 
-server.listen(8080, function(){
-    console.log("server：");
-    console.log('http://localhost:8080');
-})
+const server = http.createServer((req, res) => {
+  
+  const filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+  
+ 
+  fs.readFile(filePath, (err, data) => {
+    if (err) {
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
+      res.end('File not found');
+    } else {
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.end(data);
+    }
+  });
+});
 
+
+server.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
+});
