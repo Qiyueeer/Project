@@ -21,6 +21,7 @@ function confirm(){
     alert(a);
 alert(b);
 }
+
 function viewCart(){
 }
 
