@@ -1,0 +1,107 @@
+body{
+  font-style: sans-serif ;
+  background-color: rgb(222, 222, 222);
+}
+
+
+
+.main{
+    width:1200px;
+    margin:0 auto;
+    
+    
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #81CDC9;
+    
+}
+
+
+
+.header .title{
+    font-size: 22px;
+}
+
+.Begin img{
+    width: 1200px;
+    height: 1000px;
+}
+
+
+.content .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.content .item{
+    width: 24.5%;
+    margin-bottom: 20px;
+}
+
+
+.content .item img{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 10px;
+}
+
+/*
+item-text 设置下拉菜单。
+.content .item-text.ul{
+    display:none;
+    list-style:none;
+    position:absolute;
+    width:80px;
+    opacity:0.5;
+    
+} */
+
+span{
+font-style: italic;
+color: black;
+font-size: 60px;
+
+}
+
+.footer{
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    background-color: grey;
+    text-align: center;
+}
+
+.footer span{
+    font-size: 20px;
+}
+
+
+
+
+a:hover{
+    color: red;
+       }
+
+       
+    textarea{
+        margin-top: 1cm;
+        margin-left: 5cm;
+        width: 16cm;
+        height: 0.5cm;
+    }
+    
+    button{
+        display: inline-block;
+    }
