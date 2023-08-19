@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title> refrigerator </title>
+  <link rel="stylesheet" type="text/css" href="css/items.css" title="style" />
+  <!--<script src="main.js"></script>-->
+<script type="text/javascript">
+var counts = new Array();
+function confirm(){
+   var b = document.getElementById("count").value;
+   counts.push('1'+b);
+}
+function viewCart(){
+	alert(counts[0]);
+
+}
+</script>
+</head>
+<body>
+
+    <div class="main">
+      <div class="header">
+        <span>Speaker Page</span>
+          <ul>
+               Main Menu
+              <li><a href="#" title="z2108335219@gamil.com">contact Us</li></a>
+          </ul>
+      </div>
+      <div class="content">
+        <div class="items">
+          <div class="item">
+
+ <span>Configurations and Models: 
+            <div class="item-img" id="Laptop">
+            <img src="Image/Speaker box.png">
+            </div>
+            <div class="item-describe">
+
+	<h3 id="itemName">speaker</h3>
+                <p align="right"> <span>3060 - price：$<span id="itemPrice">1000</span></p></span>
+	<p>A speaker is a device that converts an audio signal into sound. In popular terms, it means that the speaker host box or subwoofer box comes with a power amplifier, and the audio signal is amplified by the speaker itself to play back the sound, so that the sound becomes louder.
+                  </p>
+             </div>
+      </div>
+    </div>
+    <script>
+    document.getElementById('addToCartBtn').onclick = function (params) {
+    var price = document.getElementById('itemPrice').innerText
+    var item_name =  document.getElementById('itemName').innerText
+    var quantity = document.getElementById('count').value
+      fetch('http://127.0.0.1:3000/add-to-cart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ item_name: item_name, price: Number(price), quantity: quantity})
+            })
+            .then((response) => response.text())
+            .then((message) => alert(message))
+            .catch((error) => console.error(error));
+    }
+    </script>
+    </body>
+    </html>

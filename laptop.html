@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title> Laptop </title>
+  <link rel="stylesheet" type="text/css" href="css/items.css" title="style" />
+  <!--<script src="main.js"></script>-->
+  <script type="text/javascript">
+    var counts = new Array();
+    function confirm() {
+      var b = document.getElementById("count").value;
+      counts.push('1' + b);
+    }
+    function viewCart() {
+      alert(counts[0]);
+
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="header">
+      <span>Laptop Page</span>
+      <ul>
+        Main Menu
+        <li><a href="#" title="z2108335219@gamil.com">contact Us</li></a>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="items">
+        <div class="item">
+
+          <span>Configurations and Models:
+            <div class="item-img" id="Laptop">
+              <img src="Image/Laptop.png">
+            </div>
+            <div class="item-describe">
+
+              <h3 id="itemName">Laptop</h3>
+              <p align="right"> <span>3060 - price：$<span id="itemPrice">1000</span></p>
+          </span>
+          <p>Computers, laptops and printers have become vital tools for companies and individuals in today's fast-paced
+            technological environment. Such devices, like any other asset, have a finite lifespan and depreciate over
+            time. Understanding computer, laptop, and printer depreciation rates is critical for proper financial
+            reporting and tax purposes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('addToCartBtn').onclick = function (params) {
+    var price = document.getElementById('itemPrice').innerText
+    var item_name =  document.getElementById('itemName').innerText
+    var quantity = document.getElementById('count').value
+      fetch('http://127.0.0.1:3000/add-to-cart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ item_name: item_name, price: Number(price), quantity: quantity})
+            })
+            .then((response) => response.text())
+            .then((message) => alert(message))
+            .catch((error) => console.error(error));
+    }
+  </script>
+</body>
+</html>
