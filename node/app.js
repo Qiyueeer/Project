@@ -34,9 +34,9 @@ app.get('/', (req, res) => {
     <form action="/add-to-cart" method="post" style='width:200px;margin:0 auto'>
       <label for="item">Product Name:</label>
       <select name="item" id="item" >
-        <option value="笔记本">laptop</option>
-        <option value="空调">refrigerator</option>
-        <option value="电风扇">speaker</option>
+        <option value="laptop">laptop</option>
+        <option value="refrigerator">refrigerator</option>
+        <option value="speaker">speaker</option>
       </select>
       <br>
       <label for="price">The Price of Product:</label>
