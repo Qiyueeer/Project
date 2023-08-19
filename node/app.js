@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let cartItems = [];
 
-// 添加商品到购物车
+
 app.post('/add-to-cart', (req, res) => {
   const item = req.body.item;
   const price = req.body.price;
@@ -16,7 +16,7 @@ app.post('/add-to-cart', (req, res) => {
   res.redirect('/cart');
 });
 
-// 查看购物车
+
 app.get('/cart', (req, res) => {
   let html = "<h1 style='text-align:center'>Cart</h1>";
   
@@ -27,7 +27,7 @@ app.get('/cart', (req, res) => {
   res.send(html);
 });
 
-// HTML表单，用于添加商品到购物车
+
 app.get('/', (req, res) => {
   const form = `
     <h1 style='text-align:center'>add Product</h1>
