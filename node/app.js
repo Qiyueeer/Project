@@ -59,5 +59,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('服务器已运行在 http://localhost:3000');
+  console.log('The server is on http://localhost:3000');
 });
